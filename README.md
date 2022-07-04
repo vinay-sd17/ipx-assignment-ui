@@ -1,22 +1,20 @@
-# ipx-assignment-ui
-
-Inventory management App
+# Inventory management App
 
 Create Inventory Management Frontend app for a small/medium business.
 
-Functional overview:
+# Functional overview:
 Add Products to Inventory, Search From Inventory, Search by Product Category, Add Product to Cart
 
-Additional:
+# Additional:
 User Registration & Securing API end points, Caching layer for an inventory
 
-Preferrable Tech Stack
+# Preferrable Tech Stack
 Angular, Tailwind CSS
 
-API Spec:
+# API Spec:
 Make use of: https://dummyjson.com/
 
-Routes
+API Routes
 All HTTP methods are supported. You can use http or https for your requests.
 
 GET	/products	// get all products
