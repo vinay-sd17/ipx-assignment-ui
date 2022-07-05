@@ -1,28 +1,33 @@
 # Inventory management App
 
-Create Inventory Management Frontend app for a small/medium business.
+Created Inventory Management Frontend app for a small/medium business.
 
-# Functional overview:
-Add Products to Inventory, Search From Inventory, Search by Product Category, Add Product to Cart
+# Functional Highlights:
 
-# Additional:
-User Registration & Securing API end points, Caching layer for an inventory
+- Bootstrapped with Angular & Tailwind CSS
+- 0 lines of custom styles written
+- Fully Responsive till mobile resolution
+- Routes URL optimized for products list, category based filters and product details view (helps SEO - need to have a server side rendering or dynamic rendering though to resolve cons of Angular SPA)
+- Search fields debounced to prevent frequent calls
+- Added [sample code](src/app/services/user) of user authentication service, and ways tokens, authentications will be handled.
+- Added [sample code](src/app/auth.guard.ts) of Auth Guard that can be utilized to scale for protected and open routes
+- Added HTTP Client [src/app/services](src/app/services)
+- All API requests are intercepted to configure base API URL. Added *sample code* of authentication header for API calls. [src/app/services/interceptors](src/app/services/interceptors)
+- API endpoints are added as part of [url-path](src/app/services/url-paths.ts) configuration, base URL is configured as part of environment.
 
-# Preferrable Tech Stack
-Angular, Tailwind CSS
+# Tech Stack
+
+- Angular
+- Tailwind CSS
 
 # API Spec:
-Make use of: https://dummyjson.com/
 
-API Routes
-All HTTP methods are supported. You can use http or https for your requests.
+Consumed: https://dummyjson.com/
 
-GET	/products	// get all products
-GET	/products/1	// get single product
-GET	/products/search?q=Laptop	// search products
-GET	/products/categories	// get product categories
-GET	/products/category/smartphones	// get products of a category
-POST	/products/add	// add a product
-PUT	/products/1	// update a product
-PATCH	/products/1	// update a product
-DELETE	/products/1	// delete a product
+API Routes Used
+
+- GET `/products` - get all products
+- GET `/products/1` - get single product
+- GET `/products/search?q=Laptop` - search products
+- GET `/products/categories` - get product categories
+- GET `/products/category/smartphones` - get products of a category
